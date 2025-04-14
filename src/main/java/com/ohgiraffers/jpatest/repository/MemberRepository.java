@@ -1,6 +1,6 @@
 package com.ohgiraffers.jpatest.repository;
 
-import com.ohgiraffers.jpatest.entity.MemberEntity;
+import com.ohgiraffers.jpatest.domain.MemberEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

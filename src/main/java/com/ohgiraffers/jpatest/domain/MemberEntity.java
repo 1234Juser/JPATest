@@ -1,4 +1,4 @@
-package com.ohgiraffers.jpatest.entity;
+package com.ohgiraffers.jpatest.domain;
 
 import com.ohgiraffers.jpatest.dto.MemberDTO;
 import jakarta.persistence.*;

@@ -1,11 +1,10 @@
 package com.ohgiraffers.jpatest.service;
 
 import com.ohgiraffers.jpatest.dto.MemberDTO;
-import com.ohgiraffers.jpatest.entity.MemberEntity;
+import com.ohgiraffers.jpatest.domain.MemberEntity;
 import com.ohgiraffers.jpatest.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;

@@ -1,6 +1,6 @@
 package com.ohgiraffers.jpatest.dto;
 
-import com.ohgiraffers.jpatest.entity.MemberEntity;
+import com.ohgiraffers.jpatest.domain.MemberEntity;
 import lombok.*;
 
 @Setter
