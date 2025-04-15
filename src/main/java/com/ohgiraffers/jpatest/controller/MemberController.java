@@ -62,8 +62,8 @@ public class MemberController {
     }
 
     // 회원 수정 (userId로 검색해서 이름/나이 수정)
-    @PutMapping("/members/{username}")
-    public ResponseEntity update(@PathVariable("username") String userId,
+    @PutMapping("/members/{userId}")
+    public ResponseEntity update(@PathVariable("userId") String userId,
                                  @RequestBody MemberDTO memberDTO){
         int result = memberService.updateData(userId, memberDTO);
         if(result == 1) {
@@ -96,9 +96,9 @@ public class MemberController {
     public ResponseEntity updateContent(@RequestBody MemberDTO memberDTO) {
         int result = memberService.updateContent(memberDTO);
         if (result == 1) {
-            return ResponseEntity.ok("수정 성공");
+            return ResponseEntity.ok("수정성공");
         }
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body("수정 실패");
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body("수정실패");
     }
 
 
