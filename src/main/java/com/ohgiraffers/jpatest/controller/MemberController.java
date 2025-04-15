@@ -91,7 +91,7 @@ public class MemberController {
         return ResponseEntity.ok().body(list);
     }
 
-    //nativequery로 회원수정
+    //nativequery로 회원수정(이름,나이,비밀번호)
     @PutMapping("/api/content")
     public ResponseEntity updateContent(@RequestBody MemberDTO memberDTO) {
         int result = memberService.updateContent(memberDTO);
